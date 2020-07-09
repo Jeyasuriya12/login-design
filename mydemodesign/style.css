@@ -1,0 +1,100 @@
+* {
+    font-family: "Varela Round", sans-serif;
+    word-spacing: 0.2mm;
+}
+body {
+    background-color: antiquewhite;
+}
+.marginclass {
+    padding-top: 25% !important;
+}
+@media (min-width: 768px) {
+    .h-md-100 {
+        height: 100vh;
+    }
+}
+.btn-round {
+    border-radius: 25px;
+    background-color: deeppink;
+    font-size: 0.9rem;
+    color: white;
+}
+.text-deeppink {
+    color: deeppink;
+}
+.doodle {
+    width: 60% !important;
+}
+.btn-rounds {
+    background-color: #ffffff;
+    border-radius: 25px;
+    font-size: 0.8rem;
+}
+.par {
+    text-align: justify !important;
+    padding: 10px;
+}
+.textalign {
+    text-align: start !important;
+}
+.remember {
+    font-size: 0.9rem !important;
+    color: gray;
+}
+.forgot {
+    flex: auto;
+    font-size: 0.8rem !important;
+    color: gray;
+    cursor: pointer;
+}
+.gflogo {
+    width: 8% !important;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.text-gray {
+    font-size: 0.9rem !important;
+    color: gray;
+}
+.round {
+    position: relative;
+    padding-top: 5px;
+}
+.round label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 70%;
+    cursor: pointer;
+    height: 18px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 18px;
+}
+
+.round label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 5px;
+    left: 5px;
+    opacity: 0;
+    position: absolute;
+    top: 4px;
+    transform: rotate(-45deg);
+    width: 10px;
+}
+
+.round input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+    background-color: #66bb6a;
+    border-color: #66bb6a;
+}
+
+.round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
